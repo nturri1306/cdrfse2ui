@@ -181,10 +181,13 @@
                     <groupId>org.springframework.data</groupId>
                     <artifactId>spring-data-mongodb</artifactId>
                 </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
 
-
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<finalName>${project.parent.artifactId}</finalName>
