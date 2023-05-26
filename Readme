@@ -1,0 +1,9 @@
+docker build --no-cache -t cdrfseui .
+
+docker run --hostname cdrfseui -p 7080:7080 cdrfseui
+
+docker cp 0770f8d4b7ab:/temp/cdr_fse2broker/. c:\temp
+
+docker cp . d1d2def71f09:/temp/
+
+mongorestore --host mongodb --port 27017 --username root --password 'X4gght51!d' --authenticationDatabase admin --db cdr_fse2broker /temp/"# cdr-fse2-ui"

@@ -1,0 +1,10 @@
+<html>
+<body>
+<div style="margin-top: 10px">Greetings, ${name}</div>
+<br/>
+<div> Have a nice day..!</div>
+<p>
+<img src="sample.png" th:src="|cid:${imageResourceName}|" />
+</p>
+</body>
+</html>

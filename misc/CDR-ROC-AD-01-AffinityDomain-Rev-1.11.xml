@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    Version: 2022.01
+	NOTE:
+	- sostituire i codingScheme=AZIENDA con l'OID associato all'Azienda (esempio: codingScheme="1.3.6.1.4.1.19376.1.2.6.1")
+	- sostituire i system=urn:oid:AZIENDA con urn:oid:OID associato all'Azienda (esempio: system="urn:oid:1.3.6.1.4.1.19376.1.2.6.1")
+-->
+<Codes>
+ <CodeType name="confidentialityCode" classScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f">
+    <Code code="L" display="low" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+    <Code code="M" display="moderate" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+    <Code code="N" display="normal" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+    <Code code="R" display="restricted" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+    <Code code="U" display="unrestricted" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+    <Code code="V" display="very restricted" codingScheme="2.16.840.1.113883.5.25" system="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+  </CodeType>
+  <CodeType name="healthcareFacilityTypeCode" classScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1">
+    <Code code="Ospedale" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.1" display="Ospedale" system="http://www.agid.gov.it"/>
+    <Code code="Prevenzione" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.1" display="Prevenzione" system="http://www.agid.gov.it"/>
+    <Code code="Territorio" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.1" display="Territorio" system="http://www.agid.gov.it"/>
+  </CodeType>
+  <CodeType name="eventCodeList" classScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4">
+    <Code code="P99" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.3" display="Oscuramento del documento" system="http://www.agid.gov.it"/>
+    <Code code="1" codingScheme="FSERM_ATT1" display="FSERM_ATT1" system="urn:oid:AZIENDA"/>
+    <Code code="2" codingScheme="FSERM_ALI1" display="FSERM_ALI1" system="urn:oid:AZIENDA"/>
+    <Code code="3" codingScheme="FSERM_PRE1" display="FSERM_PRE1" system="urn:oid:AZIENDA"/>
+    <Code code="4" codingScheme="FSERM_CONS" display="FSERM_CONS" system="urn:oid:AZIENDA"/>
+    <Code code="5" codingScheme="FSERM_MMG_PLS" display="FSERM_MMG_PLS" system="urn:oid:AZIENDA"/>
+    <Code code="6" codingScheme="FSERM_MMG_PLS_1" display="FSERM_MMG_PLS_1" system="urn:oid:AZIENDA"/>
+    <Code code="7" codingScheme="FSERM_MMG_PLS_2" display="FSERM_MMG_PLS_2" system="urn:oid:AZIENDA"/>
+    <Code code="8" codingScheme="FSERM_OP_AOOR" display="FSERM_OP_AOOR" system="urn:oid:AZIENDA"/>
+    <Code code="9" codingScheme="FSERM_RIC" display="FSERM_RIC" system="urn:oid:AZIENDA"/>
+    <Code code="10" codingScheme="FSERM_INF" display="FSERM_INF" system="urn:oid:AZIENDA"/>
+  </CodeType>
+  <CodeType name="practiceSettingCode" classScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead">
+    <Code code="AD_PSC001" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Allergologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC002" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Day Hospital" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC003" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Anatomia e Istologia Patologica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC005" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Angiologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC006" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Cardiochirurgia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC007" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Cardiochirurgia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC008" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Cardiologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC009" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Generale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC010" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Maxilofacciale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC011" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC012" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Plastica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC013" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Toracica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC014" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Chirurgia Vascolare" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC015" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Medicina Sportiva" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC018" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Ematologia e Immunoematologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC019" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Malattie Endocrine, del Ricambio e della Nutrizione" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC020" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Immunologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC021" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Geriatria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC024" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Malattie Infettive e Tropicali" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC025" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Medicina del Lavoro" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC026" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Medicina Generale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC028" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Unita Spinale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC029" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Nefrologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC030" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neurochirurgia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC031" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Nido" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC032" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neurologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC033" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neuropsichiatria Infantile" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC034" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Oculistica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC035" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Odontoiatria e Stomatologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC036" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Ortopedia e Traumatologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC037" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Ostetricia e Ginecologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC038" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Otorinolaringoiatria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC039" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Pediatria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC040" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Psichiatria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC042" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Tossicologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC043" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Urologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC046" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Grandi Ustioni Pediatriche" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC047" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Grandi Ustionati" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC048" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Nefrologia (Abilitazione Trapianto Rene)" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC049" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Terapia Intensiva" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC050" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Unità Coronarica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC051" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Astanteria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC052" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Dermatologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC054" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Emodialisi" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC055" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Farmacologia Clinica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC056" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Recupero e Riabilitazione Funzionale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC057" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Fisiopatologia della Riabilitazione Umana" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC058" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Gastroenterologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC060" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Lungodegenti" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC061" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Medicina Nucleare" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC062" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neonatologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC064" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Oncologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC065" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Oncoematologia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC066" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Oncoematologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC068" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Pneumologia, Fisiopatologia Respiratoria, Tosiologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC069" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Radiologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC070" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Radioterapia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC071" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Reumatologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC073" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Terapia Intensiva Neonatale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC074" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Radioterapia Oncologica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC075" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neuro-Riabilitazione" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC076" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neurochirurgia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC077" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Nefrologia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC078" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Urologia Pediatrica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC082" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Anestesia e Rianimazione" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC097" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Detenuti" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC098" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Day Surgery Plurispecialistica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC100" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Laboratorio Analisi Chimico Cliniche" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC101" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Microbiologia e Virologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC102" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Centro Trasfusionale e Immunoematologico" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC103" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Radiodiagnostica" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC104" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Neuroradiologia" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC106" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Pronto Soccorso e OBI" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC107" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Poliambulatorio" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC109" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Centrale Operativa 118" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC121" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Comparti Operatori - Degenza Ordinaria" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC122" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Comparti Operatori - Day Surgery" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC126" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Libera Professione Degenza" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC127" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Hospice Ospedaliero" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC129" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Trapianto Organi e Tessuti" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC130" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Medicina di Base" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC131" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Assistenza Territoriale" system="http://www.agid.gov.it" />
+    <Code code="AD_PSC199" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.2" display="Raccolta Consenso" system="http://www.agid.gov.it" />
+  </CodeType>
+  <CodeType name="folderCodeList" classScheme="urn:uuid:1ba97051-7806-41a8-a48b-8fce7af683c5">
+    <Code code="Referrals" display="Referrals" codingScheme="1.3.6.1.4.1.21367.2017.3" system="http://connectathon.ihe"/>
+    <Code code="Allergy_Treatments" display="Allergy Treatments" codingScheme="1.3.6.1.4.1.21367.2017.3" system="http://connectathon.ihe"/>
+  </CodeType>
+  <CodeType name="associationDocumentation" classScheme="urn:uuid:abd807a3-4432-4053-87b4-fd82c643d1f3">
+    <Code code="Additional_Information" display="Additional Information" codingScheme="1.3.6.1.4.1.21367.2017.3" system="http://connectathon.ihe"/>
+    <Code code="Corrected_Information" display="Corrected Information" codingScheme="1.3.6.1.4.1.21367.2017.3" system="http://connectathon.ihe"/>
+  </CodeType>
+  <CodeType name="typeCode" classScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983">
+    <Code code="57833-6" codingScheme="2.16.840.1.113883.6.1" display="Prescrizione farmaceutica" system="http://loinc.org"/>
+    <Code code="60591-5" codingScheme="2.16.840.1.113883.6.1" display="Profilo Sanitario Sintetico" system="http://loinc.org"/>
+    <Code code="11502-2" codingScheme="2.16.840.1.113883.6.1" display="Referto di Laboratorio" system="http://loinc.org"/>
+    <Code code="57829-4" codingScheme="2.16.840.1.113883.6.1" display="Prescrizione per prodotto o apparecchiature mediche" system="http://loinc.org"/>
+    <Code code="34105-7" codingScheme="2.16.840.1.113883.6.1" display="Lettera di dimissione ospedaliera" system="http://loinc.org"/>
+    <Code code="59258-4" codingScheme="2.16.840.1.113883.6.1" display="Verbale di pronto soccorso" system="http://loinc.org"/>
+    <Code code="68604-8" codingScheme="2.16.840.1.113883.6.1" display="Referto radiologico" system="http://loinc.org"/>
+    <Code code="11526-1" codingScheme="2.16.840.1.113883.6.1" display="Referto di anatomia patologica" system="http://loinc.org"/>
+    <Code code="59284-0" codingScheme="2.16.840.1.113883.6.1" display="Documento dei consensi" system="http://loinc.org"/>
+    <Code code="57832-8" codingScheme="2.16.840.1.113883.6.1" display="Prescrizione diagnostica o specialistica" system="http://loinc.org"/>
+    <Code code="29304-3" codingScheme="2.16.840.1.113883.6.1" display="Prestazione farmaceutica" system="http://loinc.org"/>
+    <Code code="11488-4" codingScheme="2.16.840.1.113883.6.1" display="Referto specialistico" system="http://loinc.org"/>
+    <Code code="81223-0" codingScheme="2.16.840.1.113883.6.1" display="Prestazione specialistica" system="http://loinc.org"/>
+  </CodeType>
+  <CodeType name="contentTypeCode" classScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500">
+    <Code code="PHR" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.4" display="Personal Health Record Update" system="http://www.agid.gov.it"/>
+    <Code code="CON" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.4" display="Consulto" system="http://www.agid.gov.it"/>
+    <Code code="DIS" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.4" display="Discharge" system="http://www.agid.gov.it"/>
+    <Code code="ERP" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.4" display="Erogazione Prestazione Prenotata" system="http://www.agid.gov.it"/>
+    <Code code="PDTA" codingScheme="AZIENDA" display="Percorso Diagnostico Terapeutico Assistenziale" system="urn:oid:AZIENDA"/>
+    <Code code="ASD_INT" codingScheme="AZIENDA" display="Attivita Specialistica/Diagnostica per Interni" system="urn:oid:AZIENDA"/>
+    <Code code="ASD_EST" codingScheme="AZIENDA" display="Attivita Specialistica/Diagnostica per Esterni" system="urn:oid:AZIENDA"/>
+    <Code code="ASD_PS" codingScheme="AZIENDA" display="Pronto Soccorso" system="urn:oid:AZIENDA"/>
+    <Code code="ASD_DH" codingScheme="AZIENDA" display="Day Hospital" system="urn:oid:AZIENDA"/>
+    <Code code="ASD_DS" codingScheme="AZIENDA" display="Day Surgery" system="urn:oid:AZIENDA"/>
+  </CodeType>
+  <CodeType name="classCode" classScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a">
+    <Code code="CON" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Documento Consenso" system="http://www.agid.gov.it"/>
+    <Code code="WOR" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Documento di workflow" system="http://www.agid.gov.it"/>
+    <Code code="REF" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Referto" system="http://www.agid.gov.it"/>
+    <Code code="LDO" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Lettera di dimissione ospedaliera" system="http://www.agid.gov.it"/>
+    <Code code="RIC" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Richiesta" system="http://www.agid.gov.it"/>
+    <Code code="SUM" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Sommario" system="http://www.agid.gov.it"/>
+    <Code code="TAC" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Taccuino" system="http://www.agid.gov.it"/>
+    <Code code="PRS" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Prescrizione" system="http://www.agid.gov.it"/>
+    <Code code="PRE" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Prestazioni" system="http://www.agid.gov.it"/>
+    <Code code="ESE" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.5" display="Esenzione" system="http://www.agid.gov.it"/>
+  </CodeType>
+  <CodeType name="formatCode" classScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d">
+    <Code code="2.16.840.1.113883.10.20.1" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Documento CCD" system="http://www.agid.gov.it"/>
+    <Code code="2.16.840.1.113883.2.9.10.1.2" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Prescrizione" system="http://www.agid.gov.it"/>
+    <Code code="1.3.6.1.4.1.19376.1.5.3.1.1.7" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Documento di Consenso" system="http://www.agid.gov.it"/>
+    <Code code="2.16.840.1.113883.2.9.10.1.1" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Referto di Laboratorio" system="http://www.agid.gov.it"/>
+    <Code code="2.16.840.1.113883.2.9.10.1.7" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Referto di Radiologia" system="http://www.agid.gov.it"/>
+    <Code code="2.16.840.1.113883.2.9.10.2.4.1.1" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Profilo Sanitario Sintetico" system="http://www.agid.gov.it"/>
+    <Code code="PDF" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="PDF" system="http://www.agid.gov.it"/>
+    <Code code="TXT" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="TXT" system="http://www.agid.gov.it"/>
+    <Code code="2.16.840.1.113883.2.9.10.1.5" codingScheme="2.16.840.1.113883.2.9.3.3.6.1.6" display="Lettera di Dimissione Ospedaliera" system="http://www.agid.gov.it"/>
+  </CodeType>
+  <CodeType name="mimeType">
+    <Code code="text/x-cda-r2+xml" ext="xml"/>
+    <Code code="text/xml" ext="xml"/>
+    <Code code="text/plain" ext="txt"/>
+    <Code code="application/x-pkcs7-mime" ext="pkcs"/>
+    <Code code="application/rtf" ext="rtf"/>
+    <Code code="application/dicom" ext="dicom"/>
+    <Code code="application/pdf" ext="pdf"/>
+    <Code code="multipart/related" ext="mpr"/>
+    <Code code="application/json" ext="json"/>
+    <Code code="application/zip" ext="zip"/>
+  </CodeType>
+  <AssigningAuthority display="XMPI" id="&amp;1.2.840.113556.1.150.910150910.11&amp;ISO" />
+  <AssigningAuthority display="CF" id="&amp;2.16.840.1.113883.2.9.4.3.2&amp;ISO" />
+  <AssigningAuthority display="IHERED" id="&amp;1.3.6.1.4.1.21367.13.20.1000&amp;ISO" />
+</Codes>
